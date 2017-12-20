@@ -35,6 +35,7 @@ node_module 주소 수정 새로 버전 업 하면서생긴 주소가 잘못 가
 코드는 이제 더이상 올리면 안될거 같고, read me만 달아야겠다.
 
 ** life cycle hook 
+
 angular life cycle hook 을 ionic에서는 다른 함수명으로 제공해준다. 
 그대로 angular life cycle hook을 사용해도 괜찮지만 ionic 에서 제공해주는게 더 stable 할 것같아서 ionic 쓸거다 
 ionViewCanEnter()
@@ -42,11 +43,8 @@ ionViewDidLoad()
 ionViewWillEnter()
 ionViewDidEnter()
 Exit from page view: 메모리 정리용으로 사용 
-
 ionViewWillLeave()
-
 ionViewDidLeave
-
 
 ** scss
 
