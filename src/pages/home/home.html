@@ -3,16 +3,98 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
+    <ion-title id="page-title">아롬</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+<ion-content scroll="false" padding>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
+  <div id="banner" padding-bottom>
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+    <ion-slides pager="true" loop="true">
+
+      <ion-slide>
+        <h1>Slide 1</h1>
+      </ion-slide>
+      <ion-slide>
+        <h1>Slide 2</h1>
+      </ion-slide>
+      <ion-slide>
+        <h1>Slide 3</h1>
+      </ion-slide>
+    </ion-slides>
+  </div>
+
+
+
+
+  <div id="device-list">
+
+    <ion-scroll scrollY="true" style="width: 100%; height: 100%;">
+
+  
+  
+      <ion-card>
+                
+        <ion-grid no-padding>
+          <ion-row class="row1">
+            <ion-col >
+            아롬네임
+            </ion-col>
+            <ion-col></ion-col>
+            <ion-col>
+                <div class="box" ><div id="b1" class="fill1"></div></div>
+            </ion-col>
+            <ion-col >
+                <div  class="box"><div class="fill2"></div></div>
+            </ion-col>
+
+          </ion-row>
+
+          <ion-row  class="row2">
+            <ion-col>
+              <ion-toggle ></ion-toggle>
+            </ion-col>
+            <ion-col>
+              <ion-toggle ></ion-toggle>
+            </ion-col>
+            <ion-col>
+                <div  class="box"><div class="fill3"></div></div>
+            </ion-col>
+            <ion-col>
+              <div  class="box"><div class="fill4"></div></div> 
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col  class="last-col-1"><button ion-button calss="alarm-button" full="true" strong="true" >예약 확인</button></ion-col>
+            <ion-col class="last-col-2"><button ion-button calss="blending-button" full="true" strong="true" >블렌딩</button></ion-col>
+          </ion-row>
+
+
+        </ion-grid>
+
+
+      </ion-card>
+
+      <ion-card>
+        <img src="assets/imgs/card-amsterdam.png" />
+        <div class="card-title">Amsterdam</div>
+        <div class="card-subtitle">64 Listings</div>
+      </ion-card>
+
+      <ion-card>
+        <img src="assets/imgs/card-sf.png" />
+        <div class="card-title">San Francisco</div>
+        <div class="card-subtitle">72 Listings</div>
+      </ion-card>
+
+      <ion-card>
+        <img src="assets/imgs/card-madison.png" />
+        <div class="card-title">Madison</div>
+        <div class="card-subtitle">28 Listings</div>
+      </ion-card>
+    </ion-scroll>
+  </div>
+
+
 </ion-content>
