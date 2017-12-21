@@ -49,3 +49,7 @@ ionViewDidLeave
 ** scss
 
 아이오닉에서 기본 제공하는 sass를 필요에 따라 변경 해야함 
+
+** ws  3.3.2  추가  
+개발 시 refresh 할 때 연결이 끊기는 문제로 ws 설치
+
